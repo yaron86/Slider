@@ -1,0 +1,14 @@
+﻿#container {
+	width: 940px;
+	height:321px;
+	overflow: hidden;
+	margin:0 auto;
+	position: relative;
+}
+
+#container img {
+	display: block;
+}
+
+#next{position: absolute;top:125px; right:0;}
+#prev{position: absolute; top:125px; bottom:20;}
