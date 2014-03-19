@@ -7,13 +7,17 @@
 	<script src="js/jquery-2.1.0.min.js"></script>
 	<script>
 		$(document).ready(function(){
-
+		$('#container > img:first-child').css('display', 'block');
+			$("#next").click(function(){
+			$('').next().css('display', 'block')
+			
+			});
 		});
 	</script>
 </head>
 <body>
 	<div id="container">
-		<img src="images/header-img1.jpg" alt="">
+		<img id="g" src="images/header-img1.jpg" alt="">
 		<img src="images/header-img2.jpg" alt="">
 		<img src="images/header-img3.jpg" alt="">
 		<img src="images/header-img4.jpg" alt="">

@@ -6,8 +6,8 @@
 	position: relative;
 }
 
-#container img {
-	display: block;
+#container > img {
+	display: none;
 }
 
 #next{position: absolute;top:125px; right:0;}
