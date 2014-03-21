@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="container">
+    <div id="slider">
         <img src="images/header-img-1.jpg" alt="">
         <img src="images/header-img-2.jpg" alt="">
         <img src="images/header-img-3.jpg" alt="">
@@ -19,13 +19,15 @@
     <script src="jquery-2.1.0.min.js"></script>
     <script>
         $(document).ready(function(){
-            $('#container > img:first-child').css('display', 'block');
+            $('#slider').each(function(){
+                var $self = $(this);
 
-            $("#next").click(function(){
-                $('#container > img:visible')
-                    .css('display', 'none')
-                    .next('img')
-                        .css('display', 'block');
+                $self.find('> img:first-child').css('display', 'block');
+
+                $self.find("#next").click(function() {
+                    $self.find('> img:visible').css('display', 'none')
+                         .next('img').css('display', 'block');
+                });
             });
         });
     </script>

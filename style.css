@@ -1,4 +1,4 @@
-﻿#container {
+﻿#slider {
     width: 940px;
     height:321px;
     overflow: hidden;
@@ -6,9 +6,18 @@
     position: relative;
 }
 
-#container > img {
+#slider > img {
     display: none;
 }
 
-#next{position: absolute;top:125px; right:0;}
-#prev{position: absolute; top:125px; bottom:20;}
+#slider #next, #slider #prev {
+	position: absolute;
+	top: 125px;
+}
+
+#slider #next {
+	right: 0;
+}
+#slider #prev {
+	bottom: 20;
+}
