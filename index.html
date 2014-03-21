@@ -22,7 +22,10 @@
             $('#container > img:first-child').css('display', 'block');
 
             $("#next").click(function(){
-                $('img that is displayed').next('img').css('display', 'block')
+                $('#container > img:visible')
+                    .css('display', 'none')
+                    .next('img')
+                        .css('display', 'block');
             });
         });
     </script>
