@@ -4,30 +4,27 @@
 	<meta charset="UTF-8">
 	<title>image slider</title>
 	<link rel="stylesheet" href="style.css">
-	<script src="js/jquery-2.1.0.min.js"></script>
-	<script>
-		$(document).ready(function(){
-		$('#container > img:first-child').css('display', 'block');
-			$("#next").click(function(){
-			$('img that is displayed').next('img').css('display', 'block')
-			
-			});
-		});
-	</script>
 </head>
 <body>
 	<div id="container">
-		<img src="images/header-img1.jpg" alt="">
-		<img src="images/header-img2.jpg" alt="">
-		<img src="images/header-img3.jpg" alt="">
-		<img src="images/header-img4.jpg" alt="">
+		<img src="images/header-img-1.jpg" alt="">
+		<img src="images/header-img-2.jpg" alt="">
+		<img src="images/header-img-3.jpg" alt="">
+		<img src="images/header-img-4.jpg" alt="">
 		<div id="buttons">
 			<img id="next" src="images/arrow-right.jpg" alt="">
 			<img id="prev" src="images/arrow-left.jpg" alt="">
 		</div>
 	</div>
+	<script src="jquery-2.1.0.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('#container > img:first-child').css('display', 'block');
 
-
-
+			$("#next").click(function(){
+				$('img that is displayed').next('img').css('display', 'block')
+			});
+		});
+	</script>
 </body>
 </html>
